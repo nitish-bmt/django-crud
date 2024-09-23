@@ -11,6 +11,6 @@ class UserView(APIView):
         serializer = UserSerializer(users, many=True)
         return JsonResponse(serializer.data, safe=False)
     
-    def post(self, request):
-        user = request.body
+    # def post(self, request):
+    #     user = request.body
         
